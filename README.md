@@ -59,6 +59,7 @@ Animisition v3.5.2
 
 ### 1.0
 * Released: March 2017
+
 Initial Commit
 
 ### 1.5
