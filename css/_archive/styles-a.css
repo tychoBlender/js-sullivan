@@ -1,0 +1,313 @@
+.NeuzeitSLT-Book { font-family: NeuzeitSLT-Book; }
+.NeuzeitSLTStd-BookHeavy { font-family: NeuzeitSLTStd-BookHeavy; }
+
+/*****************************************************
+HOMEPAGE
+*****************************************************/
+html,body{height:100% !important;}
+body.menuBtn{
+	overflow:hidden !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  margin: 0;
+  color: #ffffff;
+}
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active{
+	display:block;
+	color: #ffffff;
+}
+a:focus {
+	outline: 0;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+    
+a {
+  text-decoration: none;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+    
+.clear {
+  width: auto;
+}    
+/*CrossFade*/
+.fadein { position:absolute; top:0; z-index:1; width:100%; height:100%;}
+.fadein div { position:absolute;width:100%;height:100%;}
+#hero .centered{z-index:500;}
+#hero footer{z-index:500;}
+
+.main section{
+  overflow: hidden;
+}
+.main section .page_container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/*
+.centered{
+	color:#ffffff;
+    position: relative;	    
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+*/
+.lower,.lower .vertLine{	    
+    opacity:0;
+    visibility: hidden;	    
+}  
+
+.main section .page_container h2,
+.main section .page_container h3{
+    font-size: 4em;
+	line-height: 120%;
+	font-family: "NeuzeitSLTStd-BookHeavy";
+    font-weight: 100;
+    color: white;
+    position: relative;	    
+}
+.main section .page_container h2{
+    width:80%;
+    margin:auto;
+}   
+#mobileInfo{	
+	cursor:pointer;
+	z-index:50;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	text-transform: uppercase;
+	font-size:13px;
+	text-align:center;
+	padding:11px 0;
+	background-color:#000000;
+}
+ 
+#propertyMenu,
+.right.drawer,
+.left.centered,
+.right.centered,
+.section header,
+.section footer{
+	display:none;
+}
+.right.drawer{	
+position:fixed;
+display:none;
+z-index:90;
+top:0;
+right:0;	
+background-color:#000000;
+color:#ffffff;	
+height:100%;
+width:100%;
+transition: top .5s;
+overflow:scroll;
+}
+
+.right.drawer.open{
+top:0;
+}
+
+.right.drawer .centered{
+display: block;
+/* opacity:0; */
+opacity:1;
+padding:0 6.5%;
+text-align: left;	
+}
+.right.drawer.open .centered{
+display: static;
+opacity:1;
+padding-left:50px;
+padding-right:90px;
+}
+
+.right.drawer h3{
+font-family:'Inconsolata';
+font-size:12px;	
+margin:0;
+margin-bottom:10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.right.drawer h3.name{
+font-family: NeuzeitSLTStd-BookHeavy; 
+text-transform:none; 
+letter-spacing:-1px;	
+font-size:22px;
+line-height:100%;
+}
+
+.right.drawer p{
+font-family: 'NeuzeitSLT-Book'; 
+text-transform:none; 
+letter-spacing:1px;	
+font-size:14px;
+line-height:140%;
+margin:0;
+margin-bottom:45px;
+}
+
+.right.drawer p.address{
+font-family:'Inconsolata';
+text-transform:uppercase; 
+font-size:14px;	
+}
+	
+.right.drawer p:last-child{
+margin-bottom:0;
+}
+#propertyMenu{
+	visibility:hidden;
+}
+.section h2,
+.section h3{
+	font-size: 40px;
+	line-height: 120%;
+	font-family: "NeuzeitSLTStd-BookHeavy";
+	font-weight: 100;
+	color: white;
+	position: relative;	    
+}
+.section h2{
+	
+}
+.section{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/* 	margin: 0 auto 1em; */
+}
+
+/* Home Page */
+.centered > a{
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.centered .svg-wrapper {
+/*
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+*/
+border:solid 4px #ffffff;
+width: 92px;
+margin:auto;
+height: 36px;
+cursor: pointer;
+margin-top: 30px;
+z-index: 10;
+}
+
+.centered .svg-wrapper .text {
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+width: 92px;
+font-family: 'Inconsolata', san-serif;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: .15em;
+font-size: 15px;
+-webkit-font-smoothing: antialiased;
+color: #fff;
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-ms-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+.centered .svg-wrapper svg{
+	display:none;
+}
+.centered .svg-wrapper svg polyline {
+display:none;
+fill: none;
+stroke: #fff;
+stroke-width:3px;
+stroke-dasharray: 332;
+stroke-dashoffset: 0;
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-ms-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+}
+
+.centered .svg-wrapper svg polyline.left {
+/* stroke-dasharray: 332; */
+/* stroke-dashoffset: 300; */
+}
+
+.centered .svg-wrapper svg polyline.right {
+/* stroke-dasharray: 40 332; */
+/* stroke-dashoffset: -300; */
+}
+
+.viewBtn {
+	display: inline-block;
+	width: 90px;
+	border: solid 5px #ffffff;
+	text-align: center;
+	margin-top: 10px;
+	padding: 9px 0px;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.single .section{
+	height:100% !important;
+	position:relative;
+	text-align:center;
+	background-size: cover;
+	background-position: center center;
+	}
+
+/* Mobile Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+	.section h2{
+		font-size:60px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
+	.section h2{
+		font-size:70px;
+	}
+}
+
+@media only screen and (orientation: landscape) { 	
+ 	.right.drawer .centered{
+    position: relative;	    
+    top: 25%;
+    padding-bottom:45px;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+	}
+	
+	#contactPage h2{
+		font-size:30px;
+	}	
+
+}
